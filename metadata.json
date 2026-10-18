@@ -1,0 +1,6 @@
+{
+  "name": "Tường học tập AI - Truy gốc lỗi",
+  "description": "Ứng dụng giáo dục thông minh: nhận diện chữ viết tay, truy tìm chính xác dòng sai và gốc rễ ngộ nhận kiến thức, tự động cá nhân hóa bài tập phục hồi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

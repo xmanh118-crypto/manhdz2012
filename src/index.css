@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f1f7fe;
+    background-image: 
+      radial-gradient(#cbd5e1 0.75px, transparent 0.75px), 
+      radial-gradient(#cbd5e1 0.75px, #f1f7fe 0.75px);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+}
+
+/* Hiệu ứng vở ô li tập học sinh */
+.notebook-paper {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(#e2e8f0 1px, transparent 1px),
+    linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
+  background-size: 20px 20px;
+  border-left: 3px solid #f87171;
+}
+
+.notebook-paper-amber {
+  background-color: #fffef8;
+  background-image: 
+    linear-gradient(#f1e8d9 1px, transparent 1px),
+    linear-gradient(90deg, #f1e8d9 1px, transparent 1px);
+  background-size: 20px 20px;
+  border-left: 3px solid #f59e0b;
+}
+
+.handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.math-font {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Hiệu ứng gạch đỏ báo lỗi uốn lượn */
+.wavy-underline {
+  text-decoration: underline wavy #ef4444 2.5px;
+  text-underline-offset: 4px;
+}
+
+.wavy-underline-amber {
+  text-decoration: underline wavy #f59e0b 2px;
+  text-underline-offset: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
